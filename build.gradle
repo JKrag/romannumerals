@@ -1,6 +1,6 @@
 allprojects {
     // IMPORTANT: Change group do something unique for you 
-    group 'circus.praqma' 
+    group 'itu.jkrag' 
     version '0.1-SNAPSHOT'
 
 
@@ -18,7 +18,7 @@ subprojects {
 }
 
 ext {
-    artifactoryUrl = "http://lucibox/artifactory"
+    artifactoryUrl = "http://185.56.187.159/artifactory"
     def isSnapshot = version.endsWith('SNAPSHOT')
     luciRepositoryUrl = "${artifactoryUrl}/${isSnapshot ? 'libs-snapshot-local' : 'libs-release-local'}"
 }
